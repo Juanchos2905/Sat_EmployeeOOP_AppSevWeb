@@ -4,7 +4,7 @@
     {
         #region Properties
         public decimal CommisionPercentaje { get; set; }
-        public int Sales { get; set; }
+        public decimal Sales { get; set; }
         #endregion
 
         #region Methods
@@ -21,7 +21,7 @@
         {
             return $"{base.ToString()}" +
                 $"Porcentaje de comisión: {CommisionPercentaje}" +
-                $"Número de ventas: {Sales}";
+                $"Valor total de ventas: {Sales:C2}";
         }
         #endregion
 
