@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EmployeeOOP.Classes
+﻿namespace EmployeeOOP.Classes
 {
     public abstract class Employee
     {
@@ -20,7 +14,7 @@ namespace EmployeeOOP.Classes
         #region Methods
         public Employee()
         {
-            
+
         }
         public abstract decimal GetValueToPay();
 

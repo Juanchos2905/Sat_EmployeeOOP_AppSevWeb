@@ -3,9 +3,9 @@
 try
 {
     //Declaración de variables
-    int day, month, year;
+    int day, month, year, sales;
     string firstName, lastName;
-    decimal salary;
+    decimal salary, commisionPercentaje;
 
     Console.WriteLine("OOP APPLICATION");
     Console.WriteLine("---------------");
@@ -21,6 +21,7 @@ try
 
     //Inicialización de la clase Date
     Date dateObject = new Date(day, month, year);
+    CommissionEmployee commissionEmployee = new CommissionEmployee();
     Console.WriteLine("\n");
     Console.WriteLine(dateObject.ToString());
 
@@ -30,8 +31,13 @@ try
     Console.WriteLine("Ingresar apellidos: ");
     lastName = Console.ReadLine();
 
-    Console.WriteLine("Ingresar salario devengado: ");
-    salary = Decimal.Parse(Console.ReadLine());
+    Console.WriteLine("Ingrese número de ventas realizadas: ");
+    sales = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine("Ingrese la comisión que le pagan por venta: ");
+    commisionPercentaje = Decimal.Parse(Console.ReadLine());
+
+    salary = commisionPercentaje * sales;
 
 
     SalaryEmployee SalaryEmployee = new SalaryEmployee() {
