@@ -18,6 +18,10 @@ namespace EmployeeOOP.Classes
         #endregion
 
         #region Methods
+        public Employee()
+        {
+            
+        }
         public abstract decimal GetValueToPay();
 
         public override string ToString()
